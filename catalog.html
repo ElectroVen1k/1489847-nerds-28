@@ -31,21 +31,25 @@
   				<img src="ползунок.svg" alt="ползунок">
   				<p> ОТ 0 до 15000 </p>
   			</div>
-  			<ul>
-  				<li><span><b>Сетка:</b></span></li>
-  				<li><span>Адаптивная</span></li>
-  				<li><span>Фиксированная</span></li>
-  				<li><span>Резиновая</span></li>
-  			</ul>
-  			<ul>
-  				<li><span><b>Особенновсти:</b></span></li>
-  				<li><span>Слайдер</span></li>
-  				<li><span>Блок преймуществ</span></li>
-  				<li><span>Новости</span></li>
-  				<li><span>Галерея</span></li>
-  				<li><span>Корзина</span></li>
-  			</ul>
-  			<a href=""> ПОКАЗАТЬ</a>
+  		<form action="https://echo.htmlacademy.ru/" method="post">
+  			<p>Сетка:</p>
+  			   <label>
+                   <input type="radio" name="setka" value="adaptivnaya"> Адаптивная
+                </label>
+                <label>
+                   <input type="radio" name="setka" value="fiksirovannaya"> Фиксированная
+                </label>
+  			    <label>
+                   <input type="radio" name="setka" value="rezinovaya"> Резиновая
+               </label>
+  			<p>Особенности:</p>
+  				<input type="checkbox" name="slider"> Слайдер
+  				<input type="checkbox" name="advantage"> Блок преймуществ
+  				<input type="checkbox" name="news"> Новости
+  				<input type="checkbox" name="gallery"> Галерея
+  				<input type="checkbox" name="basket"> Корзина <br>
+  			   <input type="submit" value="Показать">
+        </form>
   		</section>
   		<div>
   			<h3> СОРТИРОВАТЬ:</h3>
