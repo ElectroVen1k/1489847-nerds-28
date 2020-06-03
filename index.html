@@ -9,7 +9,7 @@
   	<header>
   		<nav>
   			<a>
-  				<img src="img-nerds" wight="159" height="65" alt="Логотип Нёрдс">
+  				<img src="img/nerds-logo.png" wight="159" height="65" alt="Логотип Нёрдс">
   			</a>
   			<ul>
   				<li> <a href="">Студия</a></li>
@@ -23,35 +23,52 @@
   		</nav>
   	</header>
   	<main>
+      <h1 class="visually-hidden"> Дизайн студия Нёрдс </h1>
+  	   	<section>
+  	   		<p> Долго, дорого,
+  	   		скрупулёзно.</p>
+  	   		<p>Математически выверенный дизайн
+  	   		для вашего сайта или мобильного приложения.</p>
+  	   		<a href=""> УЗНАТЬ БОЛЬШЕ</a>
+  	   		<img src="img/slide1.png" width="760" height="431" alt="Слайд1">
+  	   	</section>
+  		  <section class="visually-hidden">
+          <p>Любим математику как никто другой</p>
+          <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p>
+          <a href=""> УЗНАТЬ БОЛЬШЕ</a>
+          <img src="img/slide2.png" width="760" height="431" alt="Слайд2">
+        </section>
+        <section class="visually-hidden">
+          <p>Только ночь, только хардкор</p>
+          <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href=""> УЗНАТЬ БОЛЬШЕ</a>
+          <img src="img/slide3.png" width="760" height="431" alt="Слайд3">
+        </section>
+        <div>
+          <button type="button">1 слайд</button>
+          <button type="button">2 слайд</button>
+          <button type="button">3 слайд</button>
+        </div>
   		<section>
-  			<p> Долго, дорого,
-  			скрупулёзно.</p>
-  			<p>Математически выверенный дизайн
-  			для вашего сайта или мобильного приложения.</p>
-  			<a href=""> УЗНАТЬ БОЛЬШЕ</a>
-  			<img src="img/slide1.png" width="760" height="431" alt="Слайд1">
-  		</section>
-  		<h1>Дизайн студия Нёрдс</h1> <!-- будет скрытый заголовок-->
-  		<section>
-  			<h2> Список товаров </h2><!-- будет скрытый заголовок-->
+  			<h2 class="visually-hidden">Список товаров </h2>
   			<ul>
   				<li>
   					<img src="img/web-cite.png" wight="300" height="146" alt="Веб-сайты">
   					<h3> ВЕБ-САЙТЫ</h3>
   					<p> Мир никогда не будет прежним после того как увидит ваш сайт</p>
-  					<a href="">Заказать</a>
+  					<a href="" aria-label="Заказать веб-сайт">Заказать</a>
   				</li>
   				<li>
   					<img src="img/app.png" wight="300" height="146" alt="Приложения">
   					<h3> Приложения</h3>
   					<p> Покорите топ-10 приложений в AppStore и GooglePlay</p>
-  					<a href="">Заказать</a>
+  					<a href="" aria-label="Заказать приложение">Заказать</a>
    				</li>
    				<li>
    					<img src="img/presentation.png" wight="300" height="146" alt="Презентация">
    					<h3>Презентации</h3>
    					<p> Вы даже не подозреваете, насколько вы изумительны!</p>
-   					<a href="">Заказать</a>
+   					<a href="" aria-label="Заказать презентацию">Заказать</a>
    				</li>
   			</ul>
    		</section>
@@ -88,27 +105,27 @@
    				</ul>
    		</section>
    		<section>
-   			<h3> Спонсоры </h3> <!-- будет скрытый заголовок -->
+   			<h3 class="visually-hidden"> Спонсоры </h3>
    			<ul>
    				<li>
-   					<a href="https://htmlacademy.ru/intensive/htmlcss">
+   					<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy">
    						<img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy">
    					</a>
    				</li>
    				<li>
-   					<a href="">
-                        <img src="img/borodinski.png" width="209" height="90" alt="borodinski">
-                    </a>
+   					<a href="" aria-label="barbershop borodinski">
+              <img src="img/borodinski.png" width="209" height="90" alt="borodinski">
+            </a>
    				</li>
    				<li>
-                    <a href="">
-   					    <img src="img/pink.png" width="185" height="52" alt="pink">
-                    </a>
+            <a href="" aria-label="Pink">
+   					  <img src="img/pink.png" width="185" height="52" alt="pink">
+            </a>
    				</li>
    				<li>
-   					<a href="">
-                        <img src="img/mishka.png" width="173" height="84" alt="mishka">
-                    </a>
+   					<a href="" aria-label="Mishka">
+              <img src="img/mishka.png" width="173" height="84" alt="mishka">
+            </a>
    				</li>
    			</ul>
    		</section>
@@ -127,24 +144,40 @@
    		</section>
   		<ul>
   			<li>
-  				<a href="http://www.vk.com">
+  				<a href="http://www.vk.com" aria-label="Страница вконтакте">
   					<img src="img/vk.svg" width="81" height="81" alt="Вконтакте">
   				</a>
   			</li>
   			<li>
-  				<a href="http://www.facebook.com">
+  				<a href="http://www.facebook.com" aria-label="Страница на Facebook">
   					<img src="img/facebook.svg" width="81" height="81" alt="Фейсбук">
   				</a>
   			</li>
   			<li>
-  				<a href="http://www.instagram.com">
+  				<a href="http://www.instagram.com" aria-label="Страница в Инстаграм">
   					<img src="img/instagram.svg" width="81" height="81" alt="Инстаграм">
   				</a>
   			</li>
-  	  	</ul>
+  	  </ul>
   	  	<h2> Давайте дружить, это выгодно!</h2>
   	  	<p> Скидка 10% для друзей из социальных сетей.</p>
+         <div>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset>
+              <legend>Напишите нам</legend>
+              <label for="your-name">Ваше имя:</label>
+              <input type="text" name="name" placeholder="Имя Фамилия" id="your-name">
+              <label for="your-email"> Ваш email:</label>
+              <input type="email" name="email" placeholder="email@example.com" id="your-email">
+                <label for="your-mail"><p>Текст письма:</p> </label>
+              <textarea name="mail" id="your-mail" rows="4" >
+                 В свободной форме
+              </textarea>
+            </fieldset>
+            <input type="submit" value="Отправить">
+          </form>
+          <button type="button">Закрыть окно</button>
+         </div>
   	</footer>
-
   </body>
 </html>
