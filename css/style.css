@@ -79,6 +79,41 @@ img{
 	opacity: 0.3;
 }
 
+/*Слайды*/
+
+.slide{
+	background-color: var(--basic-grey);
+}
+
+.slide-title{
+	font-weight: 500;
+	font-size:55px;
+	line-height: 55px;
+}
+
+.more-info{
+	width: 240px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 3px;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+}
+
+.more-info:hover,
+.more-info:focus {
+	background-color: var(--basic-dark-red);
+}
+
+.more-info:active{
+	background-color: var(--basic-extra-dark-red);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
+}
+
+/*Товары*/
+
 .all-products {
 	list-style: none;
 }
@@ -89,7 +124,7 @@ img{
 	text-transform: uppercase;
 }
 
-/* Кнопки заказа*/
+/* Кнопки заказа товара*/
 
 .button-order {
 	border: none;
@@ -148,6 +183,69 @@ img{
 	color: var(--basic-opacity-white);
 }
 
+/*О нас*/
+
+.about-us-title{
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.development-order{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*Статистика*/
+
+.stats{
+	width: 360px;
+}
+
+
+.stats-title{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.stats-list{
+	list-style: none;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 64px;
+}
+
+.percent{
+	font-size: 26px;
+	line-height: 40px;
+}
+
+.stats-name{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+/*Спонсоры*/
+
+.sponsors{
+	list-style: none;
+}
+
+.sponsors a {
+	opacity: 0.2;
+}
+
+.sponsors a:hover,
+.sponsors a:focus{
+	opacity: 1;
+}
+
+.sponsors a:active{
+	opacity: 0.1;
+}
+
 /*Соц. сети */
 .social-list {
 	list-style: none;
@@ -176,11 +274,40 @@ img{
 	opacity: 0.3;
 }
 
+/*Наши контакты*/
+
+.contacts a{
+	color: var(--basic-black);
+}
+
+.feedback-button{
+	width: 219px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: var(--basic-red);
+	line-height: 50px;
+	text-align: center;
+	color: var(--basic-white);
+	text-transform: uppercase;
+}
+
+.feedback-button:focus,
+.feedback-button:hover{
+	background-color: var(--basic-dark-red);
+}
+
+.feedback-button:active{
+	background-color: var(--basic-extra-dark-red);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
+}
+
+/*Футер*/
 .friends {
 	font-size: 36px;
 	font-weight: bold;
 }
-.feedback{
+.feedback-form{
 	display: none;
 }
 
