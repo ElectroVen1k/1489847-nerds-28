@@ -1,6 +1,8 @@
 :root {
 	--basic-white: #FFFFFF;
+	--basic-opacity-white:rgba(255, 255, 255, 0.3);
 	--basic-black: #000000;
+	--basic-opacity-black:rgba(0, 0, 0, 0.3);
 	--basic-red: #FB565A;
 	--basic-dark-red:#E74246;
 	--basic-extra-dark-red:#D7373B;
@@ -14,6 +16,7 @@
 	--basic-dark-gray: #DFDFDF;
 	--basic-extra-dark-grey:#D5D5D5;
 	--basic-grey-social: #E1E1E1;
+	--basic-shadow:rgba(0, 1, 1, 0.1);
 }
 
 body {
@@ -30,7 +33,7 @@ a {
 }
 
 img{
-	max-width: 100%
+	max-width: 100%;
 	height: auto;
 }
 
@@ -119,8 +122,8 @@ img{
 
 .order-cites:active {
 	background-color: var(--basic-extra-dark-red);
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
 }
 
 .order-apps:hover,
@@ -130,8 +133,8 @@ img{
 
 .order-apps:active {
 	background-color: var(--basic-extra-dark-green);
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
 }
 
 .order-presentation:hover,
@@ -141,8 +144,8 @@ img{
 
 .order-presentation:active {
 	background-color: var(--basic-extra-dark-yellow);
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	color: rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
 }
 
 /*Соц. сети */
@@ -166,7 +169,7 @@ img{
 
 .social-name:active{
 	background-color: var(--basic-extra-dark-red);
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
 }
 
 .social-icon:active{
@@ -229,6 +232,6 @@ img{
 }
 .show-filter:active {
 	background-color: var(--basic-extra-dark-grey);
-	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-	color: rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-black);
 }
