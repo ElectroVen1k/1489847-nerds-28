@@ -1,0 +1,364 @@
+:root {
+	--basic-white: #FFFFFF;
+	--basic-opacity-white:rgba(255, 255, 255, 0.3);
+	--basic-black: #000000;
+	--basic-opacity-black:rgba(0, 0, 0, 0.3);
+	--basic-red: #FB565A;
+	--basic-dark-red:#E74246;
+	--basic-extra-dark-red:#D7373B;
+	--basic-green: #00CA74;
+	--basic-dark-green:#00BC6C;
+	--basic-extra-dark-green:#00AA62;
+	--basic-yellow:#EFC849;
+	--basic-dark-yellow:#EAB534;
+	--basic-extra-dark-yellow:#E5A722;
+	--basic-grey: #EEEEEE;
+	--basic-dark-gray: #DFDFDF;
+	--basic-extra-dark-grey:#D5D5D5;
+	--basic-grey-social: #E1E1E1;
+	--basic-shadow:rgba(0, 1, 1, 0.1);
+}
+
+body {
+ min-width: 1460px;
+ margin: 0;
+ padding: 0;
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+ line-height: 24px;
+}
+
+a {
+ text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+/*Навигация сайта*/
+.navigation {
+	font-weight: 500;
+	line-height: 30px;
+	text-transform: uppercase;
+	background-color: var(--basic-grey);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a, .cart {
+	color: var(--basic-black);
+}
+
+
+.site-navigation a:focus,
+.cart:focus,
+.site-navigation a:hover,
+.cart:hover {
+	color: var(--basic-red);
+
+}
+
+.site-navigation a:active,
+.cart:active {
+	color: var(--basic-black);
+	mix-blend-mode: normal;
+	opacity: 0.3;
+}
+
+/*Слайды*/
+
+.slide{
+	background-color: var(--basic-grey);
+}
+
+.slide-title{
+	font-weight: 500;
+	font-size:55px;
+	line-height: 55px;
+}
+
+.more-info{
+	width: 240px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 3px;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+}
+
+.more-info:hover,
+.more-info:focus {
+	background-color: var(--basic-dark-red);
+}
+
+.more-info:active{
+	background-color: var(--basic-extra-dark-red);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
+}
+
+/*Товары*/
+
+.all-products {
+	list-style: none;
+}
+
+.product-name{
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+/* Кнопки заказа товара*/
+
+.button-order {
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	width: 160px;
+	height: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	color: var(--basic-white);
+}
+
+.order-cites{
+	background-color: var(--basic-red);
+}
+
+.order-apps{
+	background-color: var(--basic-green);
+}
+
+.order-presentation{
+	background-color: var(--basic-yellow);
+}
+
+.order-cites:focus,
+.order-cites:hover {
+	background-color: var(--basic-dark-red);
+}
+
+.order-cites:active {
+	background-color: var(--basic-extra-dark-red);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
+}
+
+.order-apps:hover,
+.order-apps:focus {
+	background-color: var(--basic-extra-dark-green);
+}
+
+.order-apps:active {
+	background-color: var(--basic-extra-dark-green);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
+}
+
+.order-presentation:hover,
+.order-presentation:focus {
+	background-color: var(--basic-dark-yellow);
+}
+
+.order-presentation:active {
+	background-color: var(--basic-extra-dark-yellow);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
+}
+
+/*О нас*/
+
+.about-us-title{
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.development-order{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*Статистика*/
+
+.stats{
+	width: 360px;
+}
+
+
+.stats-title{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.stats-list{
+	list-style: none;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 64px;
+}
+
+.percent{
+	font-size: 26px;
+	line-height: 40px;
+}
+
+.stats-name{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+/*Спонсоры*/
+
+.sponsors{
+	list-style: none;
+}
+
+.sponsors a {
+	opacity: 0.2;
+}
+
+.sponsors a:hover,
+.sponsors a:focus{
+	opacity: 1;
+}
+
+.sponsors a:active{
+	opacity: 0.1;
+}
+
+/*Соц. сети */
+.social-list {
+	list-style: none;
+}
+
+.social-name {
+	width: 81px;
+ 	height: 81px;
+ 	background-color: var(--basic-grey-social);
+ 	text-align: center;
+ 	border-radius: 50%;
+ 	line-height: 81px;
+}
+
+.social-name:focus,
+.social-name:hover {
+	background-color: var(--basic-dark-red);
+}
+
+.social-name:active{
+	background-color: var(--basic-extra-dark-red);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+}
+
+.social-icon:active{
+	opacity: 0.3;
+}
+
+/*Наши контакты*/
+
+.contacts a{
+	color: var(--basic-black);
+}
+
+.feedback-button{
+	width: 219px;
+	height: 50px;
+	border-radius: 3px;
+	background-color: var(--basic-red);
+	line-height: 50px;
+	text-align: center;
+	color: var(--basic-white);
+	text-transform: uppercase;
+}
+
+.feedback-button:focus,
+.feedback-button:hover{
+	background-color: var(--basic-dark-red);
+}
+
+.feedback-button:active{
+	background-color: var(--basic-extra-dark-red);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-white);
+}
+
+/*Футер*/
+.friends {
+	font-size: 36px;
+	font-weight: bold;
+}
+.feedback-form{
+	display: none;
+}
+
+/* 2 страница*/
+
+.catalog {
+	font-size: 55px;
+	line-height:55px;
+	font-weight: 500;
+	text-align: center;
+	background-color: var(--basic-grey);
+}
+
+/*Фильтры*/
+
+.filter legend {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.filter ul {
+	list-style:none;
+	line-height: 19px;
+}
+
+.product-info {
+	display: none;
+}
+
+.sorting {
+	list-style:none;
+}
+.show-filter{
+	width: 360px;
+	height: 50px;
+	background-color: var(--basic-grey);
+	border-radius: 3px;
+	border: none;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.show-filter:hover,
+.show-filter:focus {
+	background-color: var(--basic-dark-gray);
+}
+.show-filter:active {
+	background-color: var(--basic-extra-dark-grey);
+	box-shadow: inset 0px 3px 0px var(--basic-shadow);
+	color: var(--basic-opacity-black);
+}
