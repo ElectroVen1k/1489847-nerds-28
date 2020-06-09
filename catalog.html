@@ -30,7 +30,7 @@
   		<section>
   			<h2 class="visually-hidden">Фильтры </h2>
   			<div>
-  				<b> СТОИМОСТЬ:</b>
+  				<p class="cost"> Стоимость:</p>
   				<img src="ползунок.svg" alt="ползунок">
   				<p> ОТ 0 до 15000 </p>
   			</div>
@@ -40,17 +40,17 @@
   		  	   <ul>
               <li>
                  <label>
-                     <input type="radio" name="setka" value="adaptivnaya"> Адаптивная
+                     <input type="radio" name="setka" value="adaptive"> Адаптивная
                  </label>
               </li>
               <li>
                  <label>
-                    <input type="radio" name="setka" value="fiksirovannaya"> Фиксированная
+                    <input type="radio" name="setka" value="fixed"> Фиксированная
                  </label>
               </li>
   		        <li>
                 <label>
-                    <input type="radio" name="setka" value="rezinovaya"> Резиновая
+                    <input type="radio" name="setka" value="rubber"> Резиновая
                  </label>
               </li>
              </ul>
@@ -68,23 +68,23 @@
   			   <input class="show-filter" type="submit" value="Показать">
         </form>
   		</section>
-  		<div>
+  		<div class="sorting">
   			<h3> СОРТИРОВАТЬ:</h3>
-  			<ul class="sorting">
-  				<li><a href="">ПО ЦЕНЕ</a></li>
-  				<li><a href="">ПО ТИПУ</a></li>
-  				<li><a href="">ПО НАЗВАНИЮ</a></li>
-            <li><a href="">
-                           <img src="img/icon-down.svg" width="11" height="10" alt="сортировка по убыванию">
+  			<ul class="sorting-list">
+  				<li><a class="sorting-name sorting-name-active" href="">ПО ЦЕНЕ</a></li>
+  				<li><a class="sorting-name" href="">ПО ТИПУ</a></li>
+  				<li><a class="sorting-name" href="">ПО НАЗВАНИЮ</a></li>
+            <li><a class="sorting-name sorting-name-active" href="">
+                           <img  src="img/icon-down.svg" width="11" height="10" alt="сортировка по убыванию">
                         </a></li>
-            <li><a href="">
+            <li><a class="sorting-name" href="">
                            <img src="img/icon-up.svg" width="11" height="10" alt="сортировка по возрастанию">
                         </a></li>
   			</ul>
   		</div>
   		<section>
   			<h2 class="visually-hidden"> Товары </h2>
-  			<ul>
+  			<ul class="catalog-list">
   				<li>
                <img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
                <a href="" aria-label="Sedona">
@@ -153,23 +153,23 @@
   				</li>
   			</ul>
   		</section>
-  		<div>
-  			<ul>
-  				<li><a> 1 </a></li>
-  				<li><a href="">2</a></li>
-  				<li><a href="">3</a></li>
-  				<li><a href="">СЛЕДУЮЩАЯ</a></li>
+  		<div class="pages">
+  			<ul class="pages-list">
+  				<li><a class="page-number"><div class="page page-active">1</div></a></li>
+  				<li><a class="page-number" href=""><div class="page">2</div></a></li>
+  				<li><a class="page-number" href=""><div class="page">3</div></a></li>
+  				<li><a class="page-number" href=""><div class="page page-next">СЛЕДУЮЩАЯ</div></a></li>
   			</ul>
   		</div>
   	</main>
   	<footer>
       <section>
-        <div>
-        <b>NERDS DESIGN STUDIO</b>
+        <div class="contacts">
+        <b>NЁRDS DESIGN STUDIO</b>
         191186, Санкт-Петербург,
         ул. Б. Конюшенная, д. 19/8
         <a href="tel:+7(812)275-75-75"> тел. +7(812)275-75-75 </a>
-            <a href="">Напишите нам</a>
+            <a href=""><div class="feedback-button">Напишите нам</div></a>
           <img src="img/maps.jpg" width="1440" height="416" alt="maps">
                 <img src="img/marker.png" width="231" height="190" alt="Маркер">
         </div>
@@ -193,7 +193,7 @@
       </ul>
         <h2 class="friends"> Давайте дружить, это выгодно!</h2>
         <p class="sale"> Скидка 10% для друзей из социальных сетей.</p>
-         <div class="feedback">
+         <div class="feedback-form">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset>
               <legend>Напишите нам</legend>
