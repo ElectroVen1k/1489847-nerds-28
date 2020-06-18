@@ -67,14 +67,16 @@ img{
 
 .container{
 	width: 1160px;
- 	 margin: 0 auto;
+ 	margin: 0 auto;
 }
+
 /*Навигация сайта*/
 .navigation {
 	font-weight: 500;
 	line-height: 30px;
 	text-transform: uppercase;
 	background-color: var(--basic-grey);
+	padding-top:49px;
 }
 
 .navigation-active{
@@ -94,8 +96,14 @@ img{
 	list-style: none;
 }
 
-.cart{
-	padding-left: 25px;
+.navigation-cart{
+	min-width: 160px;
+	text-align: right;
+
+}
+
+.cart-logo{
+	padding-right: 25px;
 }
 
 .site-navigation a, .cart {
@@ -108,33 +116,79 @@ img{
 .site-navigation a:hover,
 .cart:hover {
 	color: var(--basic-red);
-
 }
 
 .site-navigation a:active,
 .cart:active {
-	color: var(--basic-black);
+	color: var(--basic-opacity-black);
 	mix-blend-mode: normal;
-	opacity: 0.3;
 }
 
 /*Слайды*/
 .background-slide{
 	background-color: var(--basic-grey);
+	padding: 0px;
+	margin:0;
 }
 
 .slides-area{
-	padding-top: 20px;
 }
 
+.slide{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding:0;
+	margin:0;
+
+}
+
+.slide-description{
+	display: grid;
+}
 
 .slide-title{
 	font-weight: 500;
 	font-size:55px;
 	line-height: 55px;
+	padding:0;
+	margin: 0;
+	margin-top: 78px;
+	margin-bottom: 25px;
+}
+
+.slide-text{
+	white-space: pre-line;
+	margin: 0;
+	padding:0;
+	margin-bottom: 38px;
+}
+
+.slide-image{
+	width: 760px;
+	height: 431px;
+}
+
+.slide-buttons{
+	display: flex;
+	justify-content: space-between;
+	width: max-content;
+	width:88px;
+	height: 18px;
+	margin:0 auto;
+	margin-top: -114px;
+}
+
+.slide-button{
+	height: 18px;
+	width: 18px;
+	margin: 0;
+	border: none;
+	background-color: var(--basic-white);
+	border-radius: 50%;
 }
 
 .more-info{
+	display: block;
 	width: 240px;
 	height: 50px;
 	line-height: 50px;
@@ -159,10 +213,12 @@ img{
 
 .all-products {
 	list-style: none;
-	margin-top: 80px;
+	margin: 0;
+	margin-top: 176px;
 	padding: 0;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 300px 300px 300px;
+	grid-column-gap: 100px;
 }
 
 .product-name{
@@ -172,12 +228,19 @@ img{
 }
 
 .product-section{
-	max-width: 260px;
-	line-height: 24px;
+	width:300px;
+	margin:0;
+	padding:0;
 }
+
+.product-description{
+	max-width: 260px;
+}
+
 /* Кнопки заказа товара*/
 
 .button-order {
+	display: block;
 	border: none;
 	outline: none;
 	border-radius: 3px;
@@ -234,18 +297,63 @@ img{
 	box-shadow: inset 0px 3px 0px var(--basic-shadow);
 	color: var(--basic-opacity-white);
 }
+/*Доп информация по сайту*/
+
+.additional-info{
+	display: grid;
+	grid-template-columns: 700px 360px;
+	grid-template-rows: 527px 180px;
+	grid-column-gap:  100px;
+	border-top: 2px solid var(--basic-grey);
+	margin-top:80px;
+}
+
+
 
 /*О нас*/
+
+.about-us{
+	display: flex;
+	flex-direction: column;
+}
+
+.about-us-title,
+.about-us-text,
+.development-order{
+	margin: 0;
+	padding:0;
+}
 
 .about-us-title{
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
+	margin-top: 73px;
+	margin-bottom: 32px;
+}
+
+.about-us-text{
+	margin-bottom: 40px;
+	max-width: 660px;
 }
 
 .development-order{
 	text-transform: uppercase;
 	font-weight: bold;
+	margin-bottom: 23px;
+}
+
+.development-order-list{
+	margin:0;
+}
+
+.development-order-name{
+	margin: 0px 0px 24px 0px;
+	padding:0;
+}
+
+.development-order-name:last-child{
+	margin-bottom: 0;
 }
 
 /*Статистика*/
@@ -259,18 +367,33 @@ img{
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+	margin:0;
+	padding: 0;
+	margin-bottom:31px;
 }
 
 .stats-list{
+	margin: 0;
+	padding: 0;
+	display: flex;
 	list-style: none;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 64px;
 }
 
+.stats-list li{
+	margin: 0;
+	padding:0;
+}
+
+.stats-logo{
+	margin-top: 39px;
+	margin-bottom: 37px;
+}
+
 .percent{
 	font-size: 26px;
-	line-height: 40px;
 }
 
 .stats-name{
@@ -282,7 +405,19 @@ img{
 /*Спонсоры*/
 
 .sponsors{
+	grid-column:1/3;
+	border-top: 2px solid var(--basic-grey);
+	border-bottom: 2px solid var(--basic-grey);
+}
+
+.sponsors-list{
+	margin: 0;
+	padding:0;
 	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	height: 180px;
+	align-items: center;
 }
 
 .sponsors a {
@@ -360,6 +495,7 @@ img{
 }
 
 .feedback-button{
+	display: block;
 	width: 219px;
 	height: 50px;
 	border-radius: 3px;
@@ -406,15 +542,16 @@ img{
 	align-items: center;
 }
 
-.footer-social-icon{
-	margin-right: 140px;
-}
-
 .social-list{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 9px;
 
+}
+
+.container-map{
+	width: 1440px;
+ 	 margin: 0 auto;
 }
 
 /* 2 страница*/

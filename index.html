@@ -20,122 +20,123 @@
   				<li> <a href="catalog.html">Магазин</a></li>
   				<li> <a href="">Контакты</a></li>
   			</ul>
-  			<div class="navigation-cart"><a href="">
-          <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-        </a>
-        <a href="" class="cart"> Корзина </a></div>
+  			<div class="navigation-cart">
+          <a href="" class="cart">
+          <img class="cart-logo" src="img/cart-icon.svg" width="15" height="15" alt="Корзина"> Корзина </a>
+        </div>
    		</div>
   		</nav>
   	</header>
-  	<main>
+  	<main class="main">
   			<div class="background-slide">
   		<div class="container slides-area">
       <h1 class="visually-hidden"> Дизайн студия Нёрдс </h1>
   	   	<section class="slide">
-  	   		<p class="slide-title"> Долго, дорого,
+  	   		<div class="slide-desctiption"><p class="slide-title"> Долго, дорого,
   	   		скрупулёзно.</p>
   	   		<p class="slide-text">Математически выверенный дизайн
   	   		для вашего сайта или мобильного приложения.</p>
-  	   		<a href=""><div class="more-info"> УЗНАТЬ БОЛЬШЕ</div></a>
-  	   		<img src="img/slide1.png" width="760" height="431" alt="Слайд1">
+  	   		<a href="" class="more-info"> УЗНАТЬ БОЛЬШЕ</a></div>
+  	   		<div class="slide-image"><img src="img/slide1.png" width="760" height="431" alt="Слайд1"><div>
   	   	</section>
-  		  <section class="visually-hidden">
-          <p>Любим математику как никто другой</p>
-          <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p>
-          <a href=""> УЗНАТЬ БОЛЬШЕ</a>
-          <img src="img/slide2.png" width="760" height="431" alt="Слайд2">
+  		  <section class="visually-hidden slide">
+          <div class="slide-desctiption"><p class="slide-title">Любим математику как никто другой</p>
+          <p class="slide-text">Никакого креатива, только математические формулы для расчёта идеальных пропорций</p>
+          <a href="" class="more-info"> УЗНАТЬ БОЛЬШЕ</a></div>
+          <div class="slide-image"><img src="img/slide2.png" width="760" height="431" alt="Слайд2"></div>
         </section>
-        <section class="visually-hidden">
-          <p>Только ночь, только хардкор</p>
-          <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href=""> УЗНАТЬ БОЛЬШЕ</a>
-          <img src="img/slide3.png" width="760" height="431" alt="Слайд3">
+        <section class="visually-hidden slide">
+          <div class="slide-desctiption"><p class="slide-title">Только ночь, только хардкор</p>
+          <p class="slide-text">Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="" class="more-info"> УЗНАТЬ БОЛЬШЕ</a></div>
+          <div class="slide-image"><img src="img/slide3.png" width="760" height="431" alt="Слайд3"></div>
         </section>
-        <div>
-          <button type="button">1 слайд</button>
-          <button type="button">2 слайд</button>
-          <button type="button">3 слайд</button>
-		</div>
     	</div>
         </div>
+        <div class="slide-buttons">
+          <button class="slide-button" type="button"></button>
+          <button class="slide-button" type="button"></button>
+          <button class="slide-button" type="button"></button>
+		</div>
   		<section class=" container">
   			<h2 class="visually-hidden">Список товаров </h2>
   			<ul class="all-products">
   				<li class="product-section">
   					<img src="img/web-cite.png" wight="300" height="146" alt="Веб-сайты">
   					<h3 class="product-name"> Веб-сайты</h3>
-  					<p> Мир никогда не будет прежним
+  					<p class="product-description"> Мир никогда не будет прежним
   					после того как увидит ваш сайт!</p>
-  					<button type="button" aria-label="Заказать веб-сайт" class="button-order order-cites">Заказать</button>
+  					<a href="" aria-label="Заказать веб-сайт" class="button-order order-cites">Заказать</a>
   				</li>
   				<li class="product-section">
   					<img src="img/app.png" wight="300" height="146" alt="Приложения">
   					<h3 class="product-name"> Приложения</h3>
   					<p> Покорите топ-10 приложений в
   					 AppStore и GooglePlay</p>
-  					<button type="button" aria-label="Заказать приложение" class="button-order order-apps">Заказать</a>
+  					<a href="" aria-label="Заказать приложение" class="button-order order-apps">Заказать</a>
    				</li>
    				<li class="product-section">
    					<img src="img/presentation.png" wight="300" height="146" alt="Презентация">
    					<h3 class="product-name">Презентации</h3>
    					<p> Вы даже не подозреваете,
    					 насколько вы изумительны!</p>
-   					<button type="button" aria-label="Заказать презентацию" class="button-order order-presentation">Заказать</a>
+   					<a href="" aria-label="Заказать презентацию" class="button-order order-presentation">Заказать</a>
    				</li>
   			</ul>
    		</section>
    		<div class="container">
+   		<div class="additional-info">
    		<article class="about-us">
    			<p class="about-us-title"> Мы - маленькая, но гордая
    			 дизайн-студия из Краснодара.</p>
    			<p class="about-us-text"> Исповедуем принципы минимализма и чистоты. Ставим математический расчёт  превыше креатива. Работаем не покладая рук, как роботы. </p>
    			<h4 class="development-order"> Выполняем заказы на разработку:</h4>
    			<ul class="development-order-list">
-   				<li> Веб-сайтов любой сложности</li>
-   				<li> Мобильных приложений для IOS и Android</li>
-   				<li> Слайдшоу и видео для корпоративных презентаций</li>
+   				<li class="development-order-name"> Веб-сайтов любой сложности</li>
+   				<li class="development-order-name"> Мобильных приложений для IOS и Android</li>
+   				<li class="development-order-name"> Слайдшоу и видео для корпоративных презентаций</li>
    			</ul>
    		</article>
    		<section class="stats">
-   			<img src="img/nerd's.png" width="360" height="208" alt="nerd's">
+   			<img class="stats-logo" src="img/nerd's.png" width="360" height="208" alt="nerd's">
    			<p class="stats-title">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
    				<ul class="stats-list">
    					<li>
    						146<sup class="percent">%</sup>
-   						<span class="stats-name">Уровень
-   						самоотдачи </span>
+   						<div class="stats-name">Уровень
+   						самоотдачи </div>
    					</li>
    					<li>
    						100<sup class="percent">%</sup>
-   						<span class="stats-name">Соблюдение
-   						сроков</span>
+   						<div class="stats-name">Соблюдение
+   						сроков</div>
    					</li>
    					<li>
    						50<sup class="percent">%</sup>
-   						<span class="stats-name">Минимальная
-   						предоплата</span>
+   						<div class="stats-name">Минимальная
+   						предоплата</div>
    					</li>
    				</ul>
    		</section>
-   		<section>
+   		<section class="sponsors">
    			<h3 class="visually-hidden"> Спонсоры </h3>
-   			<ul class="sponsors">
-   				<li class="sponsors-list">
+   			<ul class="sponsors-list">
+   				<li class="sponsors-name">
    					<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy">
    						<img src="img/htmlacademy.png" width="199" height="68" alt="htmlacademy">
    					</a>
    				</li>
-   				<li>
+   				<li class="sponsors-name">
    					<a href="" aria-label="barbershop borodinski">
               <img src="img/borodinski.png" width="209" height="90" alt="borodinski">
             </a>
    				</li>
-   				<li>
+   				<li class="sponsors-name">
             <a href="" aria-label="Pink">
    					  <img src="img/pink.png" width="185" height="52" alt="pink">
             </a>
    				</li>
-   				<li>
+   				<li class="sponsors-name">
    					<a href="" aria-label="Mishka">
               <img src="img/mishka.png" width="173" height="84" alt="mishka">
             </a>
@@ -143,11 +144,11 @@
    			</ul>
    		</section>
    	</div>
+   </div>
    	</main>
   	<footer>
   		<div class="container">
-   		<section >
-   			<div class="contacts">
+   		<section class="contacts">
 				<p class="contacts-text"><span class="contacts-title">NЁRDS DESIGN STUDIO</span>
 
 				191186, Санкт-Петербург,
@@ -155,13 +156,12 @@
 
 				<a class="contacts-tel" href="tel:+7(812)275-75-75"> тел. +7(812)275-75-75 </a>
 				</p>
-   			 		<a href=""><div class="feedback-button">Напишите нам</div></a>
-   				</div>
+   			 		<a href="" class="feedback-button">Напишите нам</a>
    		</section>
    		</div>
-   			 	<img src="img/maps.jpg" width="1440" height="416" alt="maps">
-                <img src="img/marker.png" width="231" height="190" alt="Маркер">
-        <div class="container footer-social">
+   			 	<div class="container-map"><img src="img/maps.jpg" width="1440" height="416" alt="maps">
+                <img src="img/marker.png" width="231" height="190" alt="Маркер"> </div>
+        <section class="container footer-social">
   		<div class="footer-social-icon">
   		<ul class="social-list">
   			<li class="social-name">
@@ -185,7 +185,7 @@
   	  	<h2 class="friends"> Давайте дружить, это выгодно!</h2>
   	  	<p class="sale"> Скидка 10% для друзей из социальных сетей.</p>
   	  	</div>
-  	  	</div>
+  	  	</section>
          <div class="feedback-form">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset>
