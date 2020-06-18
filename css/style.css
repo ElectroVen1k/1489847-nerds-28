@@ -99,10 +99,11 @@ img{
 .navigation-cart{
 	min-width: 160px;
 	text-align: right;
+
 }
 
-.cart{
-	padding-left: 25px;
+.cart-logo{
+	padding-right: 25px;
 }
 
 .site-navigation a, .cart {
@@ -115,14 +116,12 @@ img{
 .site-navigation a:hover,
 .cart:hover {
 	color: var(--basic-red);
-
 }
 
 .site-navigation a:active,
 .cart:active {
-	color: var(--basic-black);
+	color: var(--basic-opacity-black);
 	mix-blend-mode: normal;
-	opacity: 0.3;
 }
 
 /*Слайды*/
@@ -189,6 +188,7 @@ img{
 }
 
 .more-info{
+	display: block;
 	width: 240px;
 	height: 50px;
 	line-height: 50px;
@@ -240,6 +240,7 @@ img{
 /* Кнопки заказа товара*/
 
 .button-order {
+	display: block;
 	border: none;
 	outline: none;
 	border-radius: 3px;
@@ -494,6 +495,7 @@ img{
 }
 
 .feedback-button{
+	display: block;
 	width: 219px;
 	height: 50px;
 	border-radius: 3px;
@@ -538,10 +540,6 @@ img{
 	grid-template-columns: 260px 560px ;
 	gap: 140px;
 	align-items: center;
-}
-
-.footer-social-icon{
-	margin-right: 140px;
 }
 
 .social-list{
