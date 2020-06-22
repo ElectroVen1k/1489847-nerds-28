@@ -22,7 +22,7 @@
   			</ul>
   			<div class="navigation-cart">
           <a href="" class="cart">
-          <img class="cart-logo" src="img/cart-icon.svg" width="15" height="15" alt="Корзина"> Корзина </a>
+          Корзина </a>
         </div>
    		</div>
   		</nav>
@@ -33,7 +33,7 @@
       <h1 class="visually-hidden"> Дизайн студия Нёрдс </h1>
   	   	<section class="slide">
   	   		<div class="slide-desctiption"><p class="slide-title"> Долго, дорого,
-  	   		скрупулёзно.</p>
+  	   		скрупулезно.</p>
   	   		<p class="slide-text">Математически выверенный дизайн
   	   		для вашего сайта или мобильного приложения.</p>
   	   		<a href="" class="more-info"> УЗНАТЬ БОЛЬШЕ</a></div>
@@ -71,14 +71,14 @@
   				<li class="product-section">
   					<img src="img/app.png" wight="300" height="146" alt="Приложения">
   					<h3 class="product-name"> Приложения</h3>
-  					<p> Покорите топ-10 приложений в
-  					 AppStore и GooglePlay</p>
+  					<p class="product-description"> Покорите топ-10 приложений в
+  					 AppStore и Google Play</p>
   					<a href="" aria-label="Заказать приложение" class="button-order order-apps">Заказать</a>
    				</li>
    				<li class="product-section">
    					<img src="img/presentation.png" wight="300" height="146" alt="Презентация">
    					<h3 class="product-name">Презентации</h3>
-   					<p> Вы даже не подозреваете,
+   					<p class="product-description"> Вы даже не подозреваете,
    					 насколько вы изумительны!</p>
    					<a href="" aria-label="Заказать презентацию" class="button-order order-presentation">Заказать</a>
    				</li>
@@ -87,7 +87,7 @@
    		<div class="container">
    		<div class="additional-info">
    		<article class="about-us">
-   			<p class="about-us-title"> Мы - маленькая, но гордая
+   			<p class="about-us-title"> Мы — маленькая, но гордая
    			 дизайн-студия из Краснодара.</p>
    			<p class="about-us-text"> Исповедуем принципы минимализма и чистоты. Ставим математический расчёт  превыше креатива. Работаем не покладая рук, как роботы. </p>
    			<h4 class="development-order"> Выполняем заказы на разработку:</h4>
@@ -186,22 +186,18 @@
   	  	<p class="sale"> Скидка 10% для друзей из социальных сетей.</p>
   	  	</div>
   	  	</section>
-         <div class="feedback-form">
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset>
-              <legend>Напишите нам</legend>
-              <label for="your-name">Ваше имя:</label>
-              <input type="text" name="name" placeholder="Имя Фамилия" id="your-name">
-              <label for="your-email"> Ваш email:</label>
-              <input type="email" name="email" placeholder="email@example.com" id="your-email">
-                <label for="your-mail"><p>Текст письма:</p> </label>
-              <textarea name="mail" id="your-mail" rows="4" >
-                 В свободной форме
-              </textarea>
-            </fieldset>
-            <input type="submit" value="Отправить">
+         <div class="feedback-popap">
+          <p class="feedback-title">Напишите нам</p>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="feedback-item"><label for="your-name">Ваше имя:</label>
+              <input type="text" name="name" placeholder="Имя Фамилия" id="your-name"></p>
+              <p class="feedback-item"><label for="your-email"> Ваш email:</label>
+              <input type="email" name="email" placeholder="email@example.com" id="your-email"></p>
+              <p class="feedback-item feedback-item-text"><label for="your-mail">Текст письма:</label>
+              <input type="text" name="mail" placeholder="В свободной форме" id="your-mail"></p>
+            <input class="send-feedback" type="submit" value="Отправить">
           </form>
-          <button type="button">Закрыть окно</button>
+          <button class="close-feedback" type="button"></button>
          </div>
   	</footer>
   </body>
