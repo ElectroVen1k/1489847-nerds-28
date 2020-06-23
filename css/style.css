@@ -43,7 +43,6 @@ img{
 	height: auto;
 }
 
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -74,12 +73,13 @@ img{
 }
 
 /*Навигация сайта*/
+
 .navigation {
 	font-weight: 500;
 	text-transform: uppercase;
 	background-color: var(--basic-grey);
 	padding-top:49px;
-	width: 1440px;
+	min-width: 1440px;
 	margin: 0 auto;
 }
 
@@ -115,10 +115,10 @@ img{
 }
 
 .navigation-logo{
-padding:0;
-margin: 0;
-margin-top: -1px;
-height: 66px;
+	padding:0;
+	margin: 0;
+	margin-top: -1px;
+	height: 66px;
 }
 
 .cart::before{
@@ -137,7 +137,6 @@ height: 66px;
 	color: var(--basic-black);
 }
 
-
 .site-navigation a:focus,
 .cart:focus,
 .site-navigation a:hover,
@@ -152,14 +151,12 @@ height: 66px;
 }
 
 /*Слайды*/
+
 .background-slide{
 	background-color: var(--basic-grey);
 	padding: 0px;
 	margin:0 auto;
-	width:1440px;
-}
-
-.slides-area{
+	min-width:1440px;
 }
 
 .slide{
@@ -167,7 +164,6 @@ height: 66px;
 	grid-template-columns: 398px 1fr;
 	padding:0;
 	margin:0;
-
 }
 
 .slide-description{
@@ -329,6 +325,7 @@ height: 66px;
 	box-shadow: inset 0px 3px 0px var(--basic-shadow);
 	color: var(--basic-opacity-white);
 }
+
 /*Доп информация по сайту*/
 
 .additional-info{
@@ -549,7 +546,7 @@ height: 66px;
   	padding-left:50px;
   	box-sizing: border-box;
   	white-space: pre-line;
-  }
+}
 
 .contacts-text{
 	margin: 0;
@@ -592,6 +589,7 @@ height: 66px;
 }
 
 /*Футер*/
+
 .friends {
 	font-size: 36px;
 	line-height: 36px;
@@ -626,6 +624,7 @@ height: 66px;
 }
 
 /*Попап*/
+
 .feedback-popap{
 	margin: 0 auto;
 	width: 960px;
@@ -658,8 +657,6 @@ height: 66px;
 	box-sizing: border-box;
 }
 
-
-
 .feedback-item-text input{
 	width: 760px;
 	height: 118px;
@@ -672,7 +669,6 @@ height: 66px;
 	font-weight: bold;
 	margin-bottom: 9px;
 }
-
 
 .feedback-title{
 	margin:0;
@@ -759,7 +755,7 @@ input.send-feedback{
 }
 
 .catalog-background{
-	width:1440px;
+	min-width:1440px;
 	margin: 0 auto;
 	background-color: var(--basic-grey);
 }
@@ -821,15 +817,24 @@ input.send-feedback{
 
 }
 
-.product-info a{
+.catalog-list-name .product-info{
+	display: none;
 }
 
-.catalog-list-name:not(:first-child) .product-info{
-	display: non;
+.catalog-list-name{
+	box-shadow: none;
 }
 
-.catalog-list-name:not(:first-child){
-	box-shadow: non;
+.catalog-list-name:hover  .product-info{
+	display: flex;
+}
+
+.catalog-list-name:hover{
+	box-shadow: 0px 6px 15px var(--basic-shadow-catalog);
+}
+
+.catalog-list-name:hover img:first-child{
+	opacity: 1;
 }
 
 .product-title{
@@ -851,6 +856,14 @@ input.send-feedback{
 
 .product-title:active{
 	color: var(--basic-opacity-black);
+}
+
+.catalog-list-name img:first-child{
+	opacity: 0.12;
+}
+
+.catalog-list-name{
+	order: 0;
 }
 
 .product-text{
@@ -886,6 +899,7 @@ input.send-feedback{
 
 
 /*Сортировка*/
+
 .cost{
 	text-transform: uppercase;
 	font-size: 	18px;
@@ -1029,11 +1043,13 @@ a.sorting-name-active{
 	opacity: 0.4;
 }
 
-.checkbox-input + label:hover::before{
+.checkbox-input + label:hover::before,
+.checkbox-input + label:focus::before{
 	opacity: 1;
 }
 
-.radio-input + label:hover::before{
+.radio-input + label:hover::before,
+.radio-input + label:focus::before{
 	opacity: 1;
 }
 
