@@ -33,13 +33,28 @@
 		  	<div class="container">
 				<div class="catalog-container">
 					<section class="all-filter-container">
-						<h2 class="visually-hidden">Фильтры </h2>
-						<div>
-							<p class="cost"> Стоимость:</p>
-							<img src="ползунок.svg" alt="ползунок">
-							<p> ОТ 0 до 15000 </p>
-						</div>
 						<form class="filter" action="https://echo.htmlacademy.ru/" method="post">
+							<h2 class="visually-hidden">Фильтры </h2>
+							<fieldset class="filter-item">
+        						<legend>Стоимость:</legend>
+        						<div class="range-filter">
+         						<div class="range-controls">
+            						<div class="scale">
+              							<div class="bar"></div>
+            						</div>
+            						<div class="toggle toggle-min" tabindex="0"></div>
+            						<div class="toggle toggle-max" tabindex="0"></div>
+          						</div>
+         						<div class="price-controls">
+            						<label class="min-price">
+              							от <input type="number" name="min-price" value="0">
+            						</label>
+            						<label class="max-price">
+              							до <input type="number" name="max-price" value="15000">
+            						</label>
+          						</div>
+        						</div>
+    						</fieldset>
 							<fieldset>
 								<legend>Сетка:</legend>
 									<ul class="grid-list">
@@ -222,14 +237,14 @@
 						191186, Санкт-Петербург,
 						ул. Б. Конюшенная, д. 19/8
 
-						<a class="contacts-tel" href="tel:+7(812)275-75-75"> тел. +7(812)275-75-75 </a>
+						<a class="contacts-tel" href="tel:+7(812)275-75-75"> тел. +7 (812) 275-75-75 </a>
 					</p>
 					<a href="" class="feedback-button">Напишите нам </a>
 				</section>
 			</div>
 			<div class="container-map">
 				<img src="img/maps.jpg" width="1440" height="416" alt="maps">
-				<img src="img/marker.png" width="231" height="190" alt="Маркер">
+				<img class="marker" src="img/marker.png" width="231" height="190" alt="Маркер">
 			</div>
 		  	<section class="container footer-social">
 				<div class="footer-social-icon">
