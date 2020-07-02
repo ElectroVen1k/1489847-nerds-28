@@ -2,59 +2,59 @@
 <html class="page" lang="ru">
 	<head>
 		<meta charset="utf-8">
-	 	<title> Магазин </title>
-	 	<link href="css/normalize.css" rel="stylesheet" >
-	 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-	 	<link rel="stylesheet" href="css/style.css">
+		<title> Магазин </title>
+		<link href="css/normalize.css" rel="stylesheet" >
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-  	<body class="page-body">
+	<body class="page-body">
 		<header class="header">
 			<nav class="navigation">
-		  		<div class="container">
-			 		<a href="index.html" class="navigation-logo">
+				<div class="container">
+					<a href="index.html" class="navigation-logo">
 						<img src="img/nerds-logo.png" width="159" height="65" alt="Логотип Нёрдс">
-		  			</a>
-		  			<ul class="site-navigation">
-			 			<li><a href="">Студия</a></li>
-			 			<li><a href="">Клиенты</a></li>
-			 			<li class="navigation-active"><a href="catalog.html">Магазин</a></li>
-			 			<li><a href="">Контакты</a></li>
-		  			</ul>
-		  			<div class="navigation-cart">
-			 			<a href="" class="cart">Корзина </a>
-		  			</div>
+					</a>
+					<ul class="site-navigation">
+						<li><a href="">Студия</a></li>
+						<li><a href="">Клиенты</a></li>
+						<li class="navigation-active"><a href="catalog.html">Магазин</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+					<div class="navigation-cart">
+						<a href="" class="cart">Корзина </a>
+					</div>
 				</div>
 			</nav>
-	 	</header>
+		</header>
 		<main>
 			<div class="catalog-background">
 				<h1 class="catalog">Магазин готовых шаблонов</h1>
-	 		</div>
-		  	<div class="container">
+			</div>
+			<div class="container">
 				<div class="catalog-container">
 					<section class="all-filter-container">
 						<form class="filter" action="https://echo.htmlacademy.ru/" method="post">
 							<h2 class="visually-hidden">Фильтры </h2>
 							<fieldset class="filter-item">
-        						<legend>Стоимость:</legend>
-        						<div class="range-filter">
-         						<div class="range-controls">
-            						<div class="scale">
-              							<div class="bar"></div>
-            						</div>
-            						<div class="toggle toggle-min" tabindex="0"></div>
-            						<div class="toggle toggle-max" tabindex="0"></div>
-          						</div>
-         						<div class="price-controls">
-            						<label class="min-price">
-              							от <input type="number" name="min-price" value="0" step="100">
-            						</label>
-            						<label class="max-price">
-              							до <input type="number" name="max-price" value="15000" step="100">
-            						</label>
-          						</div>
-        						</div>
-    						</fieldset>
+								<legend>Стоимость:</legend>
+								<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min" tabindex="0" aria-label="минимальная цена"></div>
+									<div class="toggle toggle-max" tabindex="0" aria-label="максимальная цена"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">
+										от <input type="number" name="min-price" value="0" step="100">
+									</label>
+									<label class="max-price">
+										до <input type="number" name="max-price" value="15000" step="100">
+									</label>
+								</div>
+								</div>
+							</fieldset>
 							<fieldset>
 								<legend>Сетка:</legend>
 									<ul class="grid-list">
@@ -97,8 +97,8 @@
 									</li>
 								</ul>
 							</fieldset>
-			  				<input class="show-filter" type="submit" value="Показать">
-		  				</form>
+							<input class="show-filter" type="submit" value="Показать">
+						</form>
 					</section>
 					<div class="sorting">
 						<h3> СОРТИРОВАТЬ:</h3>
@@ -115,12 +115,12 @@
 							<li>
 								<a class="sorting-name sorting-name-active" href="">
 									<img  src="img/icon-down.svg" width="11" height="10" alt="сортировка по убыванию">
-							  	</a>
+								</a>
 							</li>
 							<li>
 								<a class="sorting-name" href="">
-							  		<img src="img/icon-up.svg" width="11" height="10" alt="сортировка по возрастанию">
-							  	</a>
+									<img src="img/icon-up.svg" width="11" height="10" alt="сортировка по возрастанию">
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -128,7 +128,7 @@
 						<h2 class="visually-hidden"> Товары </h2>
 						<ul class="catalog-list">
 							<li class="catalog-list-name">
-				  				<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
+								<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
 								<img class="product-img" src="img/sedona.jpg" width="360" height="580" alt=" ">
 								<div class="product-info">
 									<a href="" aria-label="Sedona">
@@ -140,19 +140,19 @@
 								</div>
 							</li>
 							<li class="catalog-list-name">
-				  				<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
+								<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
 								<img class="product-img" src="img/pink.jpg" width="360" height="580" alt=" ">
 								<div class="product-info">
 									<a href="" aria-label="Pink">
 										<h3 class="product-title">Pink App</h3>
 									</a>
 									<p class="product-text">Продуктовый лендинг
-								 	приложения для IOS и Android</p>
+									приложения для IOS и Android</p>
 									<a href="" class="product-price">9 900 <span>&#8381;</span></a>
 								</div>
 							</li>
 							<li class="catalog-list-name">
-				  				<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
+								<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
 								<img class="product-img" src="img/borodinski.jpg" width="360" height="580" alt=" ">
 								<div class="product-info">
 									<a href="" aria-label="Barbershop">
@@ -164,7 +164,7 @@
 								</div>
 							</li>
 							<li class="catalog-list-name">
-				  				<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
+								<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
 								<img class="product-img" src="img/mishka.jpg" width="360" height="580" alt=" ">
 								<div class="product-info">
 									<a href="" aria-label="Mishka">
@@ -176,7 +176,7 @@
 								</div>
 							</li>
 							<li class="catalog-list-name">
-				  				<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
+								<img src="img/browser-active.png" width="360" height="40" alt="рамка товара">
 								<img class="product-img" src="img/aplus.jpg" width="360" height="580" alt=" ">
 								<div class="product-info">
 									<a href="" aria-label="A PLUS">
@@ -204,32 +204,24 @@
 					<div class="pages-catalog">
 						<ul class="pages-catalog-list">
 							<li>
-								<a class="page-catalog-number">
-									<div class="page-catalog page-catalog-active">1</div>
-								</a>
+								<a class="page-catalog-number page-catalog-active">1</a>
 							</li>
 							<li>
-								<a class="page-catalog-number" href="">
-									<div class="page-catalog">2</div>
-								</a>
+								<a class="page-catalog-number" href="">2</a>
 							</li>
 							<li>
-								<a class="page-catalog-number" href="">
-									<div class="page-catalog">3</div>
-								</a>
+								<a class="page-catalog-number" href="">3</a>
 							</li>
 							<li>
-								<a class="page-catalog-number" href="">
-									<div class="page-catalog page-catalog-next">СЛЕДУЮЩАЯ</div>
-								</a>
+								<a class="page-catalog-number page-catalog-next" href="">СЛЕДУЮЩАЯ</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-	 		</div>
+			</div>
 		</main>
 		<footer>
-			<div class="container">
+			<div class="container footer-container">
 				<section class="contacts">
 					<p class="contacts-text">
 						<span class="contacts-title">NЁRDS DESIGN STUDIO</span>
@@ -237,7 +229,7 @@
 						191186, Санкт-Петербург,
 						ул. Б. Конюшенная, д. 19/8
 
-						<a class="contacts-tel" href="tel:+7(812)275-75-75"> тел. +7 (812) 275-75-75 </a>
+						<a class="contacts-tel" href="tel:+78122757575"> тел. +7 (812) 275-75-75 </a>
 					</p>
 					<a href="" class="feedback-button">Напишите нам </a>
 				</section>
@@ -245,7 +237,7 @@
 			<div class="container-map">
 				<img src="img/maps.jpg" width="1440" height="416" alt="maps">
 			</div>
-		  	<section class="container footer-social">
+			<section class="container footer-social">
 				<div class="footer-social-icon">
 					<ul class="social-list">
 						<li class="social-name">
@@ -273,22 +265,22 @@
 			<div class="feedback-popap">
 				<p class="feedback-title">Напишите нам</p>
 				<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-			  		<p class="feedback-item">
-			  			<label for="your-name">Ваше имя:</label>
-			  			<input type="text" name="name" placeholder="Имя Фамилия" id="your-name">
-			  		</p>
-			  		<p class="feedback-item">
-			  			<label for="your-email"> Ваш email:</label>
-			  			<input type="email" name="email" placeholder="email@example.com" id="your-email">
-			  		</p>
-			  		<p class="feedback-item feedback-item-text">
-			  			<label for="your-mail">Текст письма:</label>
-			  			<input type="text" name="mail" placeholder="В свободной форме" id="your-mail">
-			  		</p>
+					<p class="feedback-item">
+						<label for="your-name">Ваше имя:</label>
+						<input type="text" name="name" placeholder="Имя Фамилия" id="your-name">
+					</p>
+					<p class="feedback-item">
+						<label for="your-email"> Ваш email:</label>
+						<input type="email" name="email" placeholder="email@example.com" id="your-email">
+					</p>
+					<p class="feedback-item feedback-item-text">
+						<label for="your-mail">Текст письма:</label>
+						<textarea name="mail" placeholder="В свободной форме" id="your-mail"></textarea>
+					</p>
 					<input class="send-feedback" type="submit" value="Отправить">
-			 	</form>
-			 	<button class="close-feedback" type="button"></button>
+				</form>
+				<button class="close-feedback" type="button" aria-label="Закрыть окно"></button>
 			</div>
 		</footer>
-  	</body>
+	</body>
 </html>
