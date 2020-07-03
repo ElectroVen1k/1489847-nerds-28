@@ -262,25 +262,26 @@
 					<p class="sale"> Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</section>
-			<div class="feedback-popap">
+			<div class="feedback-popup">
 				<p class="feedback-title">Напишите нам</p>
 				<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
 					<p class="feedback-item">
 						<label for="your-name">Ваше имя:</label>
-						<input type="text" name="name" placeholder="Имя Фамилия" id="your-name">
+						<input class="feedback-name" type="text" name="name" placeholder="Имя Фамилия" id="your-name" >
 					</p>
 					<p class="feedback-item">
 						<label for="your-email"> Ваш email:</label>
-						<input type="email" name="email" placeholder="email@example.com" id="your-email">
+						<input class="feedback-email"type="email" name="email" placeholder="email@example.com" id="your-email" >
 					</p>
 					<p class="feedback-item feedback-item-text">
 						<label for="your-mail">Текст письма:</label>
-						<textarea name="mail" placeholder="В свободной форме" id="your-mail"></textarea>
+						<textarea class="feedback-mail" name="mail" placeholder="В свободной форме" id="your-mail" ></textarea>
 					</p>
 					<input class="send-feedback" type="submit" value="Отправить">
 				</form>
 				<button class="close-feedback" type="button" aria-label="Закрыть окно"></button>
 			</div>
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
