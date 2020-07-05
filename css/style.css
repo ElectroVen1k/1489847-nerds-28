@@ -912,7 +912,7 @@ input.send-feedback{
 	height: 21px;
 	top: 78px;
 	left: 849px;
-	background-color: : var(--basic-white);
+	background-color: var(--basic-white);
 	background-image: url("../img/close-cross.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
